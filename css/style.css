@@ -1,0 +1,33 @@
+/* Đặt margin và padding của body và html về 0 */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Đảm bảo chiều cao 100% cho html và body */
+}
+
+/* Đặt khung chính chiếm toàn bộ chiều rộng */
+#image {
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    max-width: 100%; /* Đảm bảo không bị giới hạn chiều rộng tối đa */
+    height: 400px; /* Chiều cao cố định cho khung */
+    border: 2px solid #ccc;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    background-size: contain; /* Đảm bảo hình ảnh được hiển thị đầy đủ trong khung */
+    background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+    background-position: center; /* Đặt hình ảnh ở giữa khung */
+}
+
+/* Đặt các phần tử gallery chiếm toàn bộ chiều rộng */
+.gallery {
+    display: flex; /* Sử dụng flexbox để sắp xếp các ảnh */
+    justify-content: center; /* Căn giữa các ảnh */
+    flex-wrap: wrap; /* Cho phép các ảnh xuống dòng khi không đủ chỗ */
+}
+
+/* Đặt chiều rộng của từng ảnh trong gallery */
+.gallery img {
+    width: 150px; /* Hoặc kích thước mà bạn mong muốn */
+    height: auto; /* Đảm bảo tỷ lệ khung hình */
+    margin: 10px; /* Thêm khoảng cách giữa các ảnh */
+}
