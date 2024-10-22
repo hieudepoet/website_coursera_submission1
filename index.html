@@ -1,25 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Photo Gallery</title>
+    <title>Lazy Jack</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Interactive Photo Gallery.</h1>
-        <div id="image">
-            <h2>Hover over an image below to display here.</h2>
+    <h1>Lazy Jack</h1>
+    <div id="image-container">
+        <div id="image-display">
+
         </div>
-        
-        <div class="gallery">
-            <img src="images/image1.png" alt="Homeless" class="gallery-img" onmouseover="upDate(this)" onmouseout="undo()">
-            <img src="images/image2.png" alt="Be saved" class="gallery-img" onmouseover="upDate(this)" onmouseout="undo()">
-            <img src="images/image3.png" alt="Leave after the snowstorm" class="gallery-img" onmouseover="upDate(this)" onmouseout="undo()">
+        <div id="story-content"></div> 
+
+        <div id="thumbnails">
+            <img src="images/image0.png" tabindex="0" data-story="" onmouseover="upDate(this)" onmouseleave="undo()" onfocus="focusImage(this)" onblur="blurImage(this)">
+            <img src="images/image1.png" tabindex="0" data-story="Once upon a time in a village, there was a boy named Jack. Jack was orphaned at a young age, living alone in the house his parents left behind." onmouseover="upDate(this)" onmouseleave="undo()" onfocus="focusImage(this)" onblur="blurImage(this)">
+            <img src="images/image2.png" tabindex="0" data-story="Jack has now reached adulthood, but he is very lazy and refuses to work for a living. Every day he just hangs out in the village, picking flowers, catching butterflies and flirting with Rose - a young girl in the village.<br><br>J- Miss Rose, do you want to go to the stream with me?<br><br>R- I don't want to hang out with a lazy person like you.<br><br>But because of his lazy personality, Rose is always cruel." onmouseover="upDate(this)" onmouseleave="undo()" onfocus="focusImage(this)" onblur="blurImage(this)">
+            <img src="images/image3.png" tabindex="0" data-story="Every day, at mealtime, he would choose a house in the village to beg for food.<br><br>I'm hungry, let's go find a house to beg for food.<br><br>Suddenly, he passed by a house and smelled it. Fragrant grilled meat, that is Mrs. Shelly's house. He went in and asked." onmouseover="upDate(this)" onmouseleave="undo()" onfocus="focusImage(this)" onblur="blurImage(this)">
+            <img src="images/image4.png" tabindex="0" data-story="J- Is there something delicious that I can eat today?<br><br>S- Again!? just one more time!" onmouseover="upDate(this)" onmouseleave="undo()" onfocus="focusImage(this)" onblur="blurImage(this)">
+            <img src="images/image5.png" tabindex="0" data-story="So, that was the end of a typical day for Jack, just going around and mooching off others instead of working to provide for himself." onmouseover="upDate(this)" onmouseleave="undo()" onfocus="focusImage(this)" onblur="blurImage(this)">
+            <img src="images/image6.png" tabindex="0" data-story="That year, winter lasted longer than usual. Families in the village had all stocked up on enough food during the pre-winter period. However, only Jack had no provisions because he kept being lazy during that time." onmouseover="upDate(this)" onmouseleave="undo()" onfocus="focusImage(this)" onblur="blurImage(this)">
+            <img src="images/image7.png" tabindex="0" data-story="J- Bill, can I have some food?<br><br>B- Sorry, Jack, I only have enough for my family.<br><br>J- Jane, can you share some food for me?<br><br>J- No, just go away.<br><br>And Jack continued wandering on every street with his growling stomach and the biting cold of winter." onmouseover="upDate(this)" onmouseleave="undo()" onfocus="focusImage(this)" onblur="blurImage(this)">
+            <img src="images/image8.png" tabindex="0" data-story="Three days had gone by, and Jack, extremely tired and unconscious, lay outside Chief Ben's house. Seeing this, the old man helped him inside to warm up." onmouseover="upDate(this)" onmouseleave="undo()" onfocus="focusImage(this)" onblur="blurImage(this)">
+            <img src="images/image9.png" tabindex="0" data-story="Ben gave him a simple bowl of rice.<br><br>Ben- Do you know why you ended up in this situation?<br><br>Jack- Ben...<br><br>Ben- It's because of laziness. No one will provide you with food forever. You should have worked with your own strength to prepare for winter, something that could have saved you from this difficulty.<br><br>Jack- Yes, Ben, I regret it now. From now on, I will work to support myself and avoid being in such a tough spot again." onmouseover="upDate(this)" onmouseleave="undo()" onfocus="focusImage(this)" onblur="blurImage(this)">
+            <img src="images/image10.png" tabindex="0" data-story="Winter passed, and Jack began working hard, a significant change from his lazy past. Then, he succeeded in building goodwill from the community. Finally, Rose agreed to go out with him." onmouseover="upDate(this)" onmouseleave="undo()" onfocus="focusImage(this)" onblur="blurImage(this)">
         </div>
     </div>
-
     <script src="js/script.js"></script>
 </body>
 </html>
